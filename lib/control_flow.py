@@ -1,7 +1,9 @@
 #!/usr/bin/env python3
 
 def admin_login(username, password):
-    if(username=="admin" or username=="ADMIN") and password == "12345":
+    if username=="admin" and password == "12345":
+        return "Access Granted"
+    elif username == "ADMIN" and password == "12345":
         return "Access Granted"
     else:
         return "Acces Denied"
@@ -10,11 +12,11 @@ def admin_login(username, password):
 
 def hows_the_weather(temperature):
     if temperature < 40:
-        return "brisk"
+        return "it's brisk out there!"
     elif 40 <= temperature <= 65:
-        return "a little chilly"
+        return "it's a little chilly out there!"
     elif temperature >= 85:
-        return "too dang hot"
+        return "it's too dang hot out there!"
     else:
         return "perfect"
       
@@ -51,7 +53,7 @@ def calculator(operation, num1, num2):
     pass
 
 print(admin_login("admin","12345"))
-print(admin_login("guest","12345"))
+print(admin_login("ADMIN","12345"))
 
 
 print(hows_the_weather(30))
