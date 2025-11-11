@@ -2,23 +2,23 @@
 
 def admin_login(username, password):
     if username=="admin" and password == "12345":
-        return "Access Granted"
+        return "Access granted"
     elif username == "ADMIN" and password == "12345":
-        return "Access Granted"
+        return "Access granted"
     else:
-        return "Acces Denied"
+        return "Acces denied"
     # your code here
     pass
 
 def hows_the_weather(temperature):
     if temperature < 40:
-        return "it's brisk out there!"
+        return "It's brisk out there!"
     elif 40 <= temperature <= 65:
-        return "it's a little chilly out there!"
+        return "i=It's a little chilly out there!"
     elif temperature >= 85:
-        return "it's too dang hot out there!"
+        return "It's too dang hot out there!"
     else:
-        return "perfect"
+        return "It's perfect out there!"
       
     # your code here
     pass
